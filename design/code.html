@@ -1,0 +1,1279 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-background" lang="id"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>E-Rapor Merdeka 2025 - Panduan Pembelajaran dan Asesmen</title>
+<!-- Fonts: Plus Jakarta Sans & Inter -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Plus+Jakarta+Sans:wght@600;700;800&amp;display=swap" rel="stylesheet"/>
+<!-- Google Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-tertiary": "#ffffff",
+            "on-surface": "#0b1c30",
+            "tertiary": "#00442d",
+            "on-primary": "#ffffff",
+            "on-secondary-fixed": "#131b2e",
+            "on-primary-fixed-variant": "#372abf",
+            "on-surface-variant": "#464554",
+            "on-tertiary-fixed": "#002114",
+            "secondary-fixed-dim": "#bec6e0",
+            "on-tertiary-container": "#66daa8",
+            "primary": "#2a14b4",
+            "on-background": "#0b1c30",
+            "on-secondary": "#ffffff",
+            "on-secondary-fixed-variant": "#3f465c",
+            "tertiary-fixed": "#85f8c4",
+            "secondary-fixed": "#dae2fd",
+            "surface-container-lowest": "#ffffff",
+            "surface-variant": "#d3e4fe",
+            "on-tertiary-fixed-variant": "#005137",
+            "surface-tint": "#5148d7",
+            "outline-variant": "#c7c4d7",
+            "background": "#f8f9ff",
+            "outline": "#777586",
+            "inverse-on-surface": "#eaf1ff",
+            "surface-bright": "#f8f9ff",
+            "on-primary-fixed": "#100069",
+            "surface-container-high": "#dce9ff",
+            "error-container": "#ffdad6",
+            "inverse-primary": "#c3c0ff",
+            "surface-container": "#e5eeff",
+            "tertiary-container": "#005e40",
+            "primary-container": "#4338ca",
+            "surface-container-low": "#eff4ff",
+            "on-primary-container": "#c1beff",
+            "secondary-container": "#dae2fd",
+            "inverse-surface": "#213145",
+            "tertiary-fixed-dim": "#68dba9",
+            "secondary": "#565e74",
+            "on-secondary-container": "#5c647a",
+            "surface": "#f8f9ff",
+            "on-error": "#ffffff",
+            "error": "#ba1a1a",
+            "surface-dim": "#cbdbf5",
+            "surface-container-highest": "#d3e4fe",
+            "on-error-container": "#93000a",
+            "primary-fixed-dim": "#c3c0ff",
+            "primary-fixed": "#e3dfff"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "gutter": "1rem",
+            "margin-desktop": "2rem",
+            "space-md": "0.75rem",
+            "space-sm": "0.5rem",
+            "space-lg": "1.25rem",
+            "gutter-desktop": "1.5rem",
+            "space-xs": "0.25rem",
+            "space-xl": "2rem",
+            "margin": "1rem"
+          },
+          "fontFamily": {
+            "body-md": ["Inter"],
+            "headline-lg": ["Plus Jakarta Sans"],
+            "headline-xl": ["Plus Jakarta Sans"],
+            "headline-sm": ["Plus Jakarta Sans"],
+            "body-sm": ["Inter"],
+            "data-mono": ["JetBrains Mono"],
+            "headline-xl-mobile": ["Plus Jakarta Sans"],
+            "label-sm": ["Inter"],
+            "title-md": ["Inter"],
+            "label-md": ["Inter"]
+          },
+          "fontSize": {
+            "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+            "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }],
+            "headline-xl": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+            "headline-sm": ["18px", { "lineHeight": "24px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+            "body-sm": ["13px", { "lineHeight": "18px", "fontWeight": "400" }],
+            "data-mono": ["13px", { "lineHeight": "18px", "fontWeight": "500" }],
+            "headline-xl-mobile": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "700" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "title-md": ["16px", { "lineHeight": "22px", "fontWeight": "600" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }]
+          }
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-family: 'Material Symbols Outlined';
+      font-weight: normal;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1;
+      display: inline-block;
+      white-space: nowrap;
+      word-wrap: normal;
+      direction: ltr;
+      -webkit-font-smoothing: antialiased;
+    }
+    /* Custom scrollbar for high-density assessment matrix */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #eff4ff;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #c7c4d7;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #777586;
+    }
+  </style>
+</head>
+<body class="h-full font-body-md text-on-surface bg-background flex flex-col antialiased selection:bg-secondary-container">
+<!-- ================= TOP APP BAR (Shared Components JSON Anchor) ================= -->
+<header class="bg-surface-container-lowest text-primary docked full-width top-0 shadow-sm flex justify-between items-center w-full px-6 h-16 border-b border-outline-variant z-40 fixed left-0 right-0">
+<div class="flex items-center gap-4">
+<div class="flex items-center gap-3">
+<div class="w-9 h-9 rounded-lg bg-primary flex items-center justify-center text-on-primary shadow-sm">
+<span class="material-symbols-outlined text-xl">school</span>
+</div>
+<div>
+<span class="text-headline-sm font-headline-sm font-bold text-primary tracking-tight">E-Rapor Merdeka</span>
+<span class="hidden sm:inline-block ml-2 px-1.5 py-0.5 text-label-sm font-label-sm bg-secondary-container text-on-secondary-fixed rounded">2025 v2.4</span>
+</div>
+</div>
+<!-- Academic Context Pill -->
+<div class="hidden lg:flex items-center gap-2 pl-4 border-l border-outline-variant">
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-label-md font-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">calendar_month</span>
+          2024/2025 Genap • Kelas X-1
+        </span>
+<span class="px-2.5 py-1 rounded bg-surface-container-low text-label-md font-label-md text-on-surface-variant flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-primary">menu_book</span>
+          Informatika (Fase E)
+        </span>
+</div>
+</div>
+<!-- Navigation Links from JSON Anchor -->
+<nav class="hidden 2xl:flex items-center gap-6 h-full">
+<a class="text-primary font-title-md text-title-md border-b-2 border-primary pb-3.5 pt-4" href="#penilaian">Penilaian Sumatif &amp; Formatif</a>
+<a class="text-on-surface-variant font-title-md text-title-md hover:text-on-surface pb-3.5 pt-4" href="#jurnal">Jurnal Formatif</a>
+<a class="text-on-surface-variant font-title-md text-title-md hover:text-on-surface pb-3.5 pt-4" href="#deskripsi">Deskripsi Rapor</a>
+<a class="text-on-surface-variant font-title-md text-title-md hover:text-on-surface pb-3.5 pt-4" href="#wali">Modul Wali Kelas</a>
+<a class="text-on-surface-variant font-title-md text-title-md hover:text-on-surface pb-3.5 pt-4" href="#master">Master TP &amp; KKTP</a>
+<a class="text-on-surface-variant font-title-md text-title-md hover:text-on-surface pb-3.5 pt-4" href="#cetak">Cetak Rapor A4</a>
+</nav>
+<!-- Trailing Actions & Supabase Live Status -->
+<div class="flex items-center gap-3">
+<!-- Database status indicator -->
+<div class="hidden md:flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container text-label-sm font-label-sm border border-outline-variant">
+<span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+<span class="text-on-surface-variant">Supabase Client: Connected (Mock DB)</span>
+</div>
+<!-- Sync Button -->
+<button class="flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-primary-container text-on-primary text-label-md font-label-md hover:bg-primary transition-all duration-200 ease-in-out active:scale-[0.99] shadow-sm" onclick="triggerSyncNotification()">
+<span class="material-symbols-outlined text-base">cloud_done</span>
+<span>Sinkronisasi Supabase</span>
+</button>
+<!-- Icons -->
+<div class="flex items-center gap-1 text-on-surface-variant">
+<button class="p-2 rounded-lg hover:bg-surface-container-low transition-colors duration-150 relative">
+<span class="material-symbols-outlined">notifications</span>
+<span class="absolute top-1.5 right-1.5 w-2 h-2 bg-error rounded-full"></span>
+</button>
+<button class="p-1.5 rounded-lg hover:bg-surface-container-low flex items-center gap-2 transition-colors duration-150" title="Foto Profil Guru Mata Pelajaran">
+<span class="material-symbols-outlined text-2xl text-primary">account_circle</span>
+</button>
+</div>
+</div>
+</header>
+<!-- ================= SHELL CONTAINER ================= -->
+<div class="flex flex-1 pt-16 h-full overflow-hidden">
+<!-- ================= SIDEBAR NAVIGATION (Shared Components JSON Anchor) ================= -->
+<aside class="w-64 h-[calc(100vh-4rem)] fixed left-0 top-16 flex flex-col justify-between p-4 bg-surface-container-lowest border-r border-outline-variant z-30 overflow-y-auto">
+<div class="space-y-4">
+<!-- Institution Header Card -->
+<div class="p-3 rounded-lg bg-surface-container-low border border-outline-variant">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded bg-primary-container text-on-primary flex items-center justify-center font-bold text-headline-sm">
+<span class="material-symbols-outlined">account_balance</span>
+</div>
+<div>
+<h2 class="text-title-md font-title-md font-bold text-on-surface">SMK Negeri 1 Jakarta</h2>
+<p class="text-label-sm font-label-sm text-secondary">NPSN: 20101452 • Merdeka</p>
+</div>
+</div>
+<!-- Role Switcher Dropdown CTA -->
+<div class="mt-3 pt-2 border-t border-outline-variant">
+<label class="text-label-sm font-label-sm text-secondary block mb-1">Peran Aktif Pengguna:</label>
+<div class="relative">
+<select class="w-full text-label-md font-label-md bg-surface-container-lowest border border-outline-variant rounded-md py-1 px-2 text-on-surface focus:ring-1 focus:ring-primary focus:border-primary" id="roleSelector" onchange="switchRole(this.value)">
+<option selected="" value="guru">Ganti Peran: Guru Mapel</option>
+<option value="wali">Ganti Peran: Wali Kelas</option>
+<option value="admin">Ganti Peran: Kurikulum / Admin</option>
+</select>
+</div>
+</div>
+</div>
+<!-- Navigation Tab Items -->
+<nav class="space-y-1">
+<a class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg bg-secondary-container text-on-secondary-fixed font-title-md text-title-md" href="#penilaian" onclick="setActiveNav(this, 'penilaian-view')">
+<span class="material-symbols-outlined text-primary">edit_document</span>
+<span>Penilaian Asesmen</span>
+</a>
+<a class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-body-md text-body-md" href="#jurnal" onclick="setActiveNav(this, 'jurnal-view')">
+<span class="material-symbols-outlined">assignment</span>
+<span>Jurnal Observasi</span>
+</a>
+<a class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-body-md text-body-md" href="#generator" onclick="setActiveNav(this, 'generator-modal')">
+<span class="material-symbols-outlined">auto_awesome</span>
+<span>Generator Narasi</span>
+</a>
+<a class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-body-md text-body-md" href="#wali" onclick="setActiveNav(this, 'wali-view')">
+<span class="material-symbols-outlined">groups</span>
+<span>Konsol Wali Kelas</span>
+</a>
+<a class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-body-md text-body-md" href="#master" onclick="setActiveNav(this, 'master-view')">
+<span class="material-symbols-outlined">tune</span>
+<span>Master Data TP</span>
+</a>
+<a class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-body-md text-body-md" href="#cetak" onclick="openPrintModal()">
+<span class="material-symbols-outlined">print</span>
+<span>Cetak Rapor A4</span>
+</a>
+<a class="nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-body-md text-body-md border border-dashed border-outline-variant" href="#supabase-config" onclick="toggleSupabaseModal()">
+<span class="material-symbols-outlined text-tertiary">code</span>
+<span class="text-tertiary font-medium">Schema Supabase</span>
+</a>
+</nav>
+</div>
+<!-- Sidebar Footer -->
+<div class="pt-4 border-t border-outline-variant space-y-1">
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-secondary hover:bg-surface-container-low text-body-sm font-body-sm" href="#bantuan">
+<span class="material-symbols-outlined text-lg">help</span>
+<span>Pusat Bantuan</span>
+</a>
+<a class="flex items-center gap-3 px-3 py-2 rounded-lg text-secondary hover:bg-surface-container-low text-body-sm font-body-sm" href="#pengaturan">
+<span class="material-symbols-outlined text-lg">settings</span>
+<span>Pengaturan Instansi</span>
+</a>
+<div class="px-3 pt-2 text-[10px] text-secondary">
+          Panduan Pembelajaran &amp; Asesmen 2024/2025
+        </div>
+</div>
+</aside>
+<!-- ================= MAIN WORKSPACE CANVAS ================= -->
+<main class="ml-64 flex-1 overflow-y-auto p-6 bg-background">
+<!-- Breadcrumbs & Quick Banner -->
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+<div>
+<div class="flex items-center gap-2 text-label-sm font-label-sm text-secondary mb-1">
+<span>Kurikulum Merdeka</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span>Fase E (Kelas X)</span>
+<span class="material-symbols-outlined text-xs">chevron_right</span>
+<span class="text-primary font-medium">Penilaian Sumatif Mata Pelajaran</span>
+</div>
+<h1 class="text-headline-lg font-headline-lg text-on-surface">Asesmen Capaian Pembelajaran Siswa</h1>
+</div>
+<!-- Role Context Badge Bar -->
+<div class="flex items-center gap-2 bg-surface-container-lowest p-1.5 rounded-lg border border-outline-variant shadow-sm">
+<span class="text-label-sm font-label-sm text-secondary pl-2">Filter Tampilan:</span>
+<button class="px-3 py-1 rounded bg-primary-container text-on-primary text-label-md font-label-md font-medium">Sumatif Lingkup Materi</button>
+<button class="px-3 py-1 rounded hover:bg-surface-container-low text-secondary text-label-md font-label-md">Sumatif Akhir Semester</button>
+<button class="px-3 py-1 rounded hover:bg-surface-container-low text-secondary text-label-md font-label-md">Grafik Analisis</button>
+</div>
+</div>
+<!-- Policy Info Notice (Panduan Kurikulum Merdeka 2025) -->
+<div class="mb-6 p-4 rounded-xl bg-surface-container-lowest border-l-4 border-l-primary-container border border-outline-variant flex items-start justify-between shadow-sm">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-2xl mt-0.5">info</span>
+<div>
+<h4 class="text-title-md font-title-md text-on-surface">Prinsip Asesmen Kurikulum Merdeka (Edisi Revisi 2024/2025)</h4>
+<p class="text-body-sm font-body-sm text-secondary mt-0.5">
+              Nilai rapor murni dikalkulasi dari <strong>Asesmen Sumatif (Tujuan Pembelajaran)</strong>. Asesmen formatif digunakan sebagai evaluasi berkala dan diagnostik perkembangan peserta didik tanpa pembobotan langsung ke angka rapor.
+            </p>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1" onclick="this.parentElement.style.display='none'">
+<span class="material-symbols-outlined text-sm">close</span>
+</button>
+</div>
+<!-- Bento Metric Row (Quick Statistics) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 mb-6">
+<!-- Metric 1 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="text-label-md font-label-md">Peserta Didik Terdata</span>
+<span class="material-symbols-outlined text-primary">groups</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-headline-lg font-headline-lg font-bold text-on-surface">36</span>
+<span class="text-label-sm font-label-sm text-emerald-600 font-medium">100% Aktif</span>
+</div>
+<p class="text-label-sm font-label-sm text-secondary mt-1">Kelas X-A • Rombel Reguler</p>
+</div>
+<!-- Metric 2 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="text-label-md font-label-md">Rata-Rata Kelas (TP 1-5)</span>
+<span class="material-symbols-outlined text-primary">analytics</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-headline-lg font-headline-lg font-bold text-on-surface" id="classAverage">81.8</span>
+<span class="text-label-sm font-label-sm bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded border border-emerald-200">Kategori Cakap</span>
+</div>
+<p class="text-label-sm font-label-sm text-secondary mt-1">Standar KKTP Minimum: 70</p>
+</div>
+<!-- Metric 3 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="text-label-md font-label-md">Butuh Intervensi</span>
+<span class="material-symbols-outlined text-error">warning</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-headline-lg font-headline-lg font-bold text-error">2 Siswa</span>
+<span class="text-label-sm font-label-sm text-error bg-rose-50 px-2 py-0.5 rounded border border-rose-200">Perlu Remidi</span>
+</div>
+<p class="text-label-sm font-label-sm text-secondary mt-1">TP 2 (Struktur Data) paling kritis</p>
+</div>
+<!-- Metric 4 -->
+<div class="p-4 rounded-xl bg-surface-container-lowest border border-outline-variant shadow-sm">
+<div class="flex items-center justify-between text-secondary mb-2">
+<span class="text-label-md font-label-md">Status Validasi Nilai</span>
+<span class="material-symbols-outlined text-tertiary">verified</span>
+</div>
+<div class="flex items-baseline gap-2">
+<span class="text-headline-lg font-headline-lg font-bold text-tertiary">34 / 36</span>
+<span class="text-label-sm font-label-sm text-secondary">Terisi Penuh</span>
+</div>
+<p class="text-label-sm font-label-sm text-secondary mt-1">Tersimpan di Cloud Supabase</p>
+</div>
+</div>
+<!-- WORKSPACE TOOLBAR & CALCULATION ENGINE SWITCHER -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-4 mb-6 shadow-sm">
+<div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+<!-- Calculation Engine Selection -->
+<div class="flex items-center gap-3">
+<span class="text-label-md font-label-md font-bold text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-base">tune</span>
+              Mesin Kalkulasi Nilai Akhir:
+            </span>
+<div class="inline-flex rounded-lg border border-outline-variant p-1 bg-surface-container-low" role="group">
+<button class="px-3 py-1 rounded text-label-md font-label-md bg-white text-primary shadow-sm font-medium" id="calc-pure" onclick="setCalculationMode('pure')" type="button">
+                Rata-Rata Murni
+              </button>
+<button class="px-3 py-1 rounded text-label-md font-label-md text-secondary hover:text-on-surface font-medium" id="calc-weighted" onclick="setCalculationMode('weighted')" type="button">
+                Bobot TP (20% x 5)
+              </button>
+<button class="px-3 py-1 rounded text-label-md font-label-md text-secondary hover:text-on-surface font-medium" id="calc-kktp" onclick="setCalculationMode('kktp')" type="button">
+                Ketercapaian KKTP
+              </button>
+</div>
+</div>
+<!-- Actions: Export, Batch Save, Filter -->
+<div class="flex items-center gap-2">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200" id="saveIndicator">
+<span class="material-symbols-outlined text-sm">check_circle</span>
+<span>Tersimpan otomatis ke database</span>
+</div>
+<button class="px-3 py-1.5 rounded-lg border border-outline-variant text-label-md font-label-md text-on-surface hover:bg-surface-container-low flex items-center gap-1.5 transition-colors" onclick="triggerRecalculation()">
+<span class="material-symbols-outlined text-base">refresh</span>
+              Hitung Ulang
+            </button>
+<button class="px-3 py-1.5 rounded-lg bg-secondary-container text-on-secondary-fixed text-label-md font-label-md font-semibold hover:bg-secondary-fixed transition-colors flex items-center gap-1.5" onclick="openDescriptionGenerator('Ahmad Fadhil')">
+<span class="material-symbols-outlined text-base">auto_awesome</span>
+              Generate Narasi Otomatis
+            </button>
+</div>
+</div>
+<!-- Legend KKTP Chips -->
+<div class="mt-4 pt-3 border-t border-outline-variant flex flex-wrap items-center justify-between text-label-sm font-label-sm">
+<div class="flex items-center gap-3">
+<span class="text-secondary font-medium">Kriteria Ketercapaian Tujuan Pembelajaran (KKTP):</span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-[#ECFDF5] text-[#047857] border border-[#A7F3D0]">
+              Mahir (85 - 100)
+            </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-[#FFFBEB] text-[#B45309] border border-[#FDE68A]">
+              Cakap (70 - 84)
+            </span>
+<span class="inline-flex items-center px-2 py-0.5 rounded text-[11px] font-medium bg-[#FFF1F2] text-[#BE123C] border border-[#FECDD3]">
+              Perlu Bimbingan (&lt; 70)
+            </span>
+</div>
+<div class="text-secondary">
+            Mata Pelajaran: <strong>Informatika</strong> • Fase E (Kurikulum Merdeka 2025)
+          </div>
+</div>
+</div>
+<!-- ================= ASSESSMENT MATRIX DATAGRID ================= -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant shadow-sm overflow-hidden mb-8">
+<div class="overflow-x-auto">
+<table class="w-full text-left border-collapse text-body-sm font-body-sm" id="assessmentTable">
+<thead>
+<tr class="bg-surface-container-low text-secondary border-b border-outline-variant text-label-sm font-label-sm">
+<th class="p-3 w-12 text-center sticky left-0 bg-surface-container-low z-20">NO</th>
+<th class="p-3 w-32 sticky left-12 bg-surface-container-low z-20">NISN</th>
+<th class="p-3 w-48 sticky left-44 bg-surface-container-low z-20 border-r border-outline-variant">NAMA SISWA</th>
+<th class="p-3 text-center min-w-[110px]">
+<div class="font-semibold text-on-surface">TP 1</div>
+<div class="text-[10px] text-secondary font-normal">Algoritma &amp; Pemrograman</div>
+</th>
+<th class="p-3 text-center min-w-[110px]">
+<div class="font-semibold text-on-surface">TP 2</div>
+<div class="text-[10px] text-secondary font-normal">Struktur Data Graf/Tree</div>
+</th>
+<th class="p-3 text-center min-w-[110px]">
+<div class="font-semibold text-on-surface">TP 3</div>
+<div class="text-[10px] text-secondary font-normal">Jaringan Komputer &amp; Internet</div>
+</th>
+<th class="p-3 text-center min-w-[110px]">
+<div class="font-semibold text-on-surface">TP 4</div>
+<div class="text-[10px] text-secondary font-normal">Keamanan Data &amp; Privasi</div>
+</th>
+<th class="p-3 text-center min-w-[110px]">
+<div class="font-semibold text-on-surface">TP 5</div>
+<div class="text-[10px] text-secondary font-normal">Dampak Sosial Informatika</div>
+</th>
+<th class="p-3 text-center min-w-[90px] bg-surface-container border-l border-outline-variant">
+<div class="font-bold text-primary">NILAI AKHIR</div>
+<div class="text-[10px] text-secondary font-normal">Rata-Rata</div>
+</th>
+<th class="p-3 text-center min-w-[120px]">STATUS KKTP</th>
+<th class="p-3 text-center min-w-[130px]">AKSI &amp; RAPOR</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant" id="studentTableBody">
+<!-- Siswa 1 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-student-id="1">
+<td class="p-3 text-center font-medium sticky left-0 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">1</td>
+<td class="p-3 font-data-mono text-secondary sticky left-12 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">0081294821</td>
+<td class="p-3 font-semibold text-on-surface sticky left-44 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10 border-r border-outline-variant">
+                  Ahmad Fadhil
+                </td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium focus:ring-2 focus:ring-primary-container bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(1)" type="number" value="85"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium focus:ring-2 focus:ring-primary-container bg-rose-50 text-rose-800" max="100" min="0" onchange="updateStudentScore(1)" type="number" value="62"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium focus:ring-2 focus:ring-primary-container bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(1)" type="number" value="92"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium focus:ring-2 focus:ring-primary-container bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(1)" type="number" value="78"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium focus:ring-2 focus:ring-primary-container bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(1)" type="number" value="80"/>
+</td>
+<td class="p-3 text-center font-data-mono font-bold text-primary bg-surface-container/60 border-l border-outline-variant text-base final-score">
+                  79.4
+                </td>
+<td class="p-3 text-center kktp-badge-cell">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFFBEB] text-[#B45309] border border-[#FDE68A]">
+                    Tuntas (Cakap)
+                  </span>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="p-1.5 rounded hover:bg-secondary-container text-primary" onclick="openDescriptionGenerator('Ahmad Fadhil', [85, 62, 92, 78, 80])" title="Generator Deskripsi">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</button>
+<button class="p-1.5 rounded hover:bg-secondary-container text-secondary" onclick="openPrintModalForStudent('Ahmad Fadhil', '0081294821', 79.4)" title="Cetak Rapor Individual">
+<span class="material-symbols-outlined text-lg">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Siswa 2 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-student-id="2">
+<td class="p-3 text-center font-medium sticky left-0 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">2</td>
+<td class="p-3 font-data-mono text-secondary sticky left-12 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">0081294822</td>
+<td class="p-3 font-semibold text-on-surface sticky left-44 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10 border-r border-outline-variant">
+                  Bunga Citra Lestari
+                </td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(2)" type="number" value="90"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(2)" type="number" value="88"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(2)" type="number" value="94"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(2)" type="number" value="86"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(2)" type="number" value="92"/>
+</td>
+<td class="p-3 text-center font-data-mono font-bold text-primary bg-surface-container/60 border-l border-outline-variant text-base final-score">
+                  90.0
+                </td>
+<td class="p-3 text-center kktp-badge-cell">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#ECFDF5] text-[#047857] border border-[#A7F3D0]">
+                    Tuntas (Mahir)
+                  </span>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="p-1.5 rounded hover:bg-secondary-container text-primary" onclick="openDescriptionGenerator('Bunga Citra Lestari', [90, 88, 94, 86, 92])" title="Generator Deskripsi">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</button>
+<button class="p-1.5 rounded hover:bg-secondary-container text-secondary" onclick="openPrintModalForStudent('Bunga Citra Lestari', '0081294822', 90.0)" title="Cetak Rapor Individual">
+<span class="material-symbols-outlined text-lg">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Siswa 3 (Perlu Bimbingan) -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-student-id="3">
+<td class="p-3 text-center font-medium sticky left-0 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">3</td>
+<td class="p-3 font-data-mono text-secondary sticky left-12 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">0081294823</td>
+<td class="p-3 font-semibold text-on-surface sticky left-44 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10 border-r border-outline-variant">
+                  Dimas Pratama
+                </td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-rose-50 text-rose-800" max="100" min="0" onchange="updateStudentScore(3)" type="number" value="65"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-rose-50 text-rose-800" max="100" min="0" onchange="updateStudentScore(3)" type="number" value="58"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(3)" type="number" value="70"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-rose-50 text-rose-800" max="100" min="0" onchange="updateStudentScore(3)" type="number" value="64"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-rose-50 text-rose-800" max="100" min="0" onchange="updateStudentScore(3)" type="number" value="68"/>
+</td>
+<td class="p-3 text-center font-data-mono font-bold text-error bg-surface-container/60 border-l border-outline-variant text-base final-score">
+                  65.0
+                </td>
+<td class="p-3 text-center kktp-badge-cell">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFF1F2] text-[#BE123C] border border-[#FECDD3]">
+                    Perlu Bimbingan
+                  </span>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="p-1.5 rounded hover:bg-secondary-container text-primary" onclick="openDescriptionGenerator('Dimas Pratama', [65, 58, 70, 64, 68])" title="Generator Deskripsi">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</button>
+<button class="p-1.5 rounded hover:bg-secondary-container text-secondary" onclick="openPrintModalForStudent('Dimas Pratama', '0081294823', 65.0)" title="Cetak Rapor Individual">
+<span class="material-symbols-outlined text-lg">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Siswa 4 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-student-id="4">
+<td class="p-3 text-center font-medium sticky left-0 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">4</td>
+<td class="p-3 font-data-mono text-secondary sticky left-12 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">0081294824</td>
+<td class="p-3 font-semibold text-on-surface sticky left-44 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10 border-r border-outline-variant">
+                  Eka Nurul Aini
+                </td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(4)" type="number" value="82"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(4)" type="number" value="79"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(4)" type="number" value="85"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(4)" type="number" value="88"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(4)" type="number" value="84"/>
+</td>
+<td class="p-3 text-center font-data-mono font-bold text-primary bg-surface-container/60 border-l border-outline-variant text-base final-score">
+                  83.6
+                </td>
+<td class="p-3 text-center kktp-badge-cell">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFFBEB] text-[#B45309] border border-[#FDE68A]">
+                    Tuntas (Cakap)
+                  </span>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="p-1.5 rounded hover:bg-secondary-container text-primary" onclick="openDescriptionGenerator('Eka Nurul Aini', [82, 79, 85, 88, 84])" title="Generator Deskripsi">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</button>
+<button class="p-1.5 rounded hover:bg-secondary-container text-secondary" onclick="openPrintModalForStudent('Eka Nurul Aini', '0081294824', 83.6)" title="Cetak Rapor Individual">
+<span class="material-symbols-outlined text-lg">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Siswa 5 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-student-id="5">
+<td class="p-3 text-center font-medium sticky left-0 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">5</td>
+<td class="p-3 font-data-mono text-secondary sticky left-12 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">0081294825</td>
+<td class="p-3 font-semibold text-on-surface sticky left-44 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10 border-r border-outline-variant">
+                  Fajar Hidayat
+                </td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(5)" type="number" value="88"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(5)" type="number" value="84"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(5)" type="number" value="86"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(5)" type="number" value="90"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800" max="100" min="0" onchange="updateStudentScore(5)" type="number" value="91"/>
+</td>
+<td class="p-3 text-center font-data-mono font-bold text-primary bg-surface-container/60 border-l border-outline-variant text-base final-score">
+                  87.8
+                </td>
+<td class="p-3 text-center kktp-badge-cell">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#ECFDF5] text-[#047857] border border-[#A7F3D0]">
+                    Tuntas (Mahir)
+                  </span>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="p-1.5 rounded hover:bg-secondary-container text-primary" onclick="openDescriptionGenerator('Fajar Hidayat', [88, 84, 86, 90, 91])" title="Generator Deskripsi">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</button>
+<button class="p-1.5 rounded hover:bg-secondary-container text-secondary" onclick="openPrintModalForStudent('Fajar Hidayat', '0081294825', 87.8)" title="Cetak Rapor Individual">
+<span class="material-symbols-outlined text-lg">print</span>
+</button>
+</div>
+</td>
+</tr>
+<!-- Siswa 6 -->
+<tr class="hover:bg-surface-container-low/50 transition-colors group" data-student-id="6">
+<td class="p-3 text-center font-medium sticky left-0 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">6</td>
+<td class="p-3 font-data-mono text-secondary sticky left-12 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10">0081294826</td>
+<td class="p-3 font-semibold text-on-surface sticky left-44 bg-surface-container-lowest group-hover:bg-surface-container-low/50 z-10 border-r border-outline-variant">
+                  Gita Savitri Dewi
+                </td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(6)" type="number" value="76"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(6)" type="number" value="74"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(6)" type="number" value="79"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(6)" type="number" value="81"/>
+</td>
+<td class="p-2 text-center">
+<input class="score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800" max="100" min="0" onchange="updateStudentScore(6)" type="number" value="78"/>
+</td>
+<td class="p-3 text-center font-data-mono font-bold text-primary bg-surface-container/60 border-l border-outline-variant text-base final-score">
+                  77.6
+                </td>
+<td class="p-3 text-center kktp-badge-cell">
+<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFFBEB] text-[#B45309] border border-[#FDE68A]">
+                    Tuntas (Cakap)
+                  </span>
+</td>
+<td class="p-3 text-center">
+<div class="flex items-center justify-center gap-1.5">
+<button class="p-1.5 rounded hover:bg-secondary-container text-primary" onclick="openDescriptionGenerator('Gita Savitri Dewi', [76, 74, 79, 81, 78])" title="Generator Deskripsi">
+<span class="material-symbols-outlined text-lg">auto_awesome</span>
+</button>
+<button class="p-1.5 rounded hover:bg-secondary-container text-secondary" onclick="openPrintModalForStudent('Gita Savitri Dewi', '0081294826', 77.6)" title="Cetak Rapor Individual">
+<span class="material-symbols-outlined text-lg">print</span>
+</button>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<!-- Table Pagination / Status Footer -->
+<div class="p-4 bg-surface-container-low border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-3 text-label-md font-label-md text-secondary">
+<div class="flex items-center gap-2">
+<span>Menampilkan <strong>6</strong> dari <strong>36</strong> siswa</span>
+<span class="text-outline-variant">|</span>
+<span>Interval Ketercapaian: 0-69 (Bimbingan), 70-84 (Cakap), 85-100 (Mahir)</span>
+</div>
+<div class="flex items-center gap-1">
+<button class="px-2.5 py-1 rounded border border-outline-variant bg-surface-container-lowest text-secondary hover:bg-surface-container disabled:opacity-50" disabled="">Sebelumnya</button>
+<button class="px-2.5 py-1 rounded bg-primary text-on-primary font-medium">1</button>
+<button class="px-2.5 py-1 rounded border border-outline-variant bg-surface-container-lowest text-secondary hover:bg-surface-container">2</button>
+<button class="px-2.5 py-1 rounded border border-outline-variant bg-surface-container-lowest text-secondary hover:bg-surface-container">Selanjutnya</button>
+</div>
+</div>
+</div>
+<!-- ================= SECTION: WALI KELAS & EARLY WARNING PLENO ================= -->
+<section class="mt-8 pt-6 border-t border-outline-variant" id="section-wali">
+<div class="flex items-center justify-between mb-4">
+<div>
+<div class="flex items-center gap-2">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary text-label-sm font-label-sm">Konsol Wali Kelas</span>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Early Warning Siswa &amp; Pleno Kenaikan Kelas</h2>
+</div>
+<p class="text-body-sm font-body-sm text-secondary">Deteksi dini peserta didik yang memerlukan pendampingan intensif sebelum sidang pleno.</p>
+</div>
+<button class="px-3 py-1.5 rounded-lg border border-outline-variant bg-surface-container-lowest hover:bg-surface-container text-label-md font-label-md flex items-center gap-1.5">
+<span class="material-symbols-outlined text-base">download</span>
+            Export Rekap Pleno PDF
+          </button>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-8">
+<!-- Early Warning List (2 Cols) -->
+<div class="lg:col-span-2 bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm">
+<h3 class="text-title-md font-title-md text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-error">notification_important</span>
+              Daftar Siswa Berisiko Rendah s.d Tinggi
+            </h3>
+<div class="space-y-3">
+<!-- Item 1 -->
+<div class="p-3 rounded-lg bg-rose-50/50 border border-rose-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-rose-100 text-rose-700 flex items-center justify-center font-bold text-xs mt-0.5">
+                    DP
+                  </div>
+<div>
+<div class="font-semibold text-on-surface">Dimas Pratama (NISN: 0081294823)</div>
+<div class="text-label-sm font-label-sm text-rose-700 mt-0.5">
+                      3 TP di bawah KKTP • Presensi: Tanpa Keterangan 4 hari
+                    </div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="px-2.5 py-1 rounded bg-rose-100 text-rose-800 text-label-sm font-label-sm font-medium">
+                    Rekomendasi: Sidang Pleno
+                  </span>
+<button class="p-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="p-3 rounded-lg bg-amber-50/50 border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+<div class="flex items-start gap-3">
+<div class="w-8 h-8 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-xs mt-0.5">
+                    AF
+                  </div>
+<div>
+<div class="font-semibold text-on-surface">Ahmad Fadhil (NISN: 0081294821)</div>
+<div class="text-label-sm font-label-sm text-amber-700 mt-0.5">
+                      1 TP Perlu Bimbingan (TP 2: Struktur Data) • Kehadiran 98%
+                    </div>
+</div>
+</div>
+<div class="flex items-center gap-2 self-end sm:self-center">
+<span class="px-2.5 py-1 rounded bg-amber-100 text-amber-800 text-label-sm font-label-sm font-medium">
+                    Naik dg Pendampingan
+                  </span>
+<button class="p-1 rounded text-secondary hover:text-on-surface hover:bg-surface-container-high">
+<span class="material-symbols-outlined text-base">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<!-- Quick Action Info -->
+<div class="mt-4 pt-3 border-t border-outline-variant flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span>Batas penguncian nilai rapor semester: <strong>21 Juni 2025</strong></span>
+<a class="text-primary font-medium hover:underline" href="#">Lihat Rincian Seluruh Siswa →</a>
+</div>
+</div>
+<!-- Presensi & Karakter Mini Form -->
+<div class="bg-surface-container-lowest rounded-xl border border-outline-variant p-4 shadow-sm flex flex-col justify-between">
+<div>
+<h3 class="text-title-md font-title-md text-on-surface mb-3 flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">co_present</span>
+                Input Cepat Presensi Kelas X-A
+              </h3>
+<div class="grid grid-cols-3 gap-2 mb-3">
+<div class="p-2.5 rounded bg-surface-container-low border border-outline-variant text-center">
+<div class="text-label-sm font-label-sm text-secondary">Sakit (S)</div>
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface mt-1">12</div>
+<div class="text-[10px] text-secondary">Hari total</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low border border-outline-variant text-center">
+<div class="text-label-sm font-label-sm text-secondary">Izin (I)</div>
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface mt-1">8</div>
+<div class="text-[10px] text-secondary">Hari total</div>
+</div>
+<div class="p-2.5 rounded bg-surface-container-low border border-outline-variant text-center">
+<div class="text-label-sm font-label-sm text-secondary">Alpa (A)</div>
+<div class="text-headline-sm font-headline-sm font-bold text-error mt-1">5</div>
+<div class="text-[10px] text-secondary">Hari total</div>
+</div>
+</div>
+<p class="text-body-sm font-body-sm text-secondary">
+                Catatan Karakter P5: Fokus dimensi Gotong Royong dan Bernalar Kritis sudah tercapai 92% peserta didik.
+              </p>
+</div>
+<button class="mt-4 w-full py-2 rounded-lg bg-surface-container hover:bg-surface-container-high text-primary font-title-md text-title-md transition-colors text-center" onclick="alert('Formulir presensi komprehensif dibuka.')">
+              Kelola Detail Presensi Siswa
+            </button>
+</div>
+</div>
+</section>
+</main>
+</div>
+<!-- ================= MODAL: AUTO-GENERATOR DESKRIPSI RAPOR ================= -->
+<div class="fixed inset-0 z-50 hidden bg-slate-900/50 backdrop-blur-sm flex items-center justify-center p-4" id="narrativeModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-2xl w-full border border-outline-variant shadow-xl overflow-hidden animate-in fade-in zoom-in duration-150">
+<div class="p-4 border-b border-outline-variant flex items-center justify-between bg-surface-container-low">
+<div class="flex items-center gap-2">
+<div class="w-8 h-8 rounded-lg bg-primary-container text-on-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-base">auto_awesome</span>
+</div>
+<div>
+<h3 class="text-title-md font-title-md font-bold text-on-surface">Generator Narasi Deskripsi Rapor</h3>
+<p class="text-label-sm font-label-sm text-secondary">Deteksi otomatis Capaian Tertinggi &amp; Terendah (Kurikulum Merdeka)</p>
+</div>
+</div>
+<button class="text-secondary hover:text-on-surface p-1" onclick="closeDescriptionModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-6 space-y-4">
+<!-- Target Student Card -->
+<div class="p-3 bg-surface-container-low rounded-lg border border-outline-variant flex items-center justify-between">
+<div>
+<div class="text-label-sm font-label-sm text-secondary">Peserta Didik:</div>
+<div class="text-headline-sm font-headline-sm font-bold text-on-surface" id="modalStudentName">Ahmad Fadhil</div>
+</div>
+<span class="px-2.5 py-1 rounded bg-secondary-container text-on-secondary-fixed text-label-md font-label-md">
+            Mata Pelajaran: Informatika
+          </span>
+</div>
+<!-- Detection Indicators -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+<div class="p-3 rounded-lg bg-emerald-50 border border-emerald-200">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm font-bold text-emerald-800 mb-1">
+<span class="material-symbols-outlined text-base">trending_up</span>
+              Capaian Kompetensi Tertinggi:
+            </div>
+<div class="text-body-sm font-body-sm text-emerald-900 font-semibold" id="modalHighestTP">TP 3 - Jaringan Komputer &amp; Internet (Skor: 92)</div>
+<p class="text-[11px] text-emerald-700 mt-1">Menguasai pemahaman topologi, konfigurasi IP, dan troubleshooting dasar.</p>
+</div>
+<div class="p-3 rounded-lg bg-rose-50 border border-rose-200">
+<div class="flex items-center gap-1.5 text-label-sm font-label-sm font-bold text-rose-800 mb-1">
+<span class="material-symbols-outlined text-base">trending_down</span>
+              Perlu Peningkatan / Bimbingan:
+            </div>
+<div class="text-body-sm font-body-sm text-rose-900 font-semibold" id="modalLowestTP">TP 2 - Struktur Data Graf/Tree (Skor: 62)</div>
+<p class="text-[11px] text-rose-700 mt-1">Memerlukan penguatan dalam implementasi algoritma traversal.</p>
+</div>
+</div>
+<!-- Generated Narrative Textarea -->
+<div>
+<div class="flex items-center justify-between mb-1.5">
+<label class="text-label-md font-label-md font-bold text-on-surface flex items-center gap-1">
+<span>Sintesis Narasi Rapor Resmi</span>
+<span class="text-secondary font-normal">(Dapat diedit langsung oleh Guru)</span>
+</label>
+<span class="text-label-sm font-label-sm text-secondary" id="wordCountIndicator">32 kata</span>
+</div>
+<textarea class="w-full text-body-sm font-body-sm p-3 rounded-lg border border-outline-variant bg-surface-container-lowest focus:ring-2 focus:ring-primary-container focus:border-primary text-on-surface" id="narrativeTextarea" rows="4">Menunjukkan penguasaan yang sangat baik dalam menganalisis topologi jaringan komputer dan troubleshooting dasar, namun masih memerlukan bimbingan intensif dalam menerapkan konsep algoritma struktur data graf dan tree.</textarea>
+<div class="mt-1 flex items-center justify-between text-label-sm font-label-sm text-secondary">
+<span>Formula: [Kekuatan Capaian TP Tertinggi] + [Rekomendasi Tindak Lanjut TP Terendah]</span>
+<button class="text-primary font-medium hover:underline flex items-center gap-1" onclick="regenerateVariation()">
+<span class="material-symbols-outlined text-xs">restart_alt</span>
+              Generate Alternatif Kata
+            </button>
+</div>
+</div>
+</div>
+<div class="p-4 bg-surface-container-low border-t border-outline-variant flex items-center justify-end gap-2">
+<button class="px-4 py-2 rounded-lg border border-outline-variant text-label-md font-label-md hover:bg-surface-container text-on-surface" onclick="closeDescriptionModal()">
+          Batal
+        </button>
+<button class="px-4 py-2 rounded-lg bg-primary text-on-primary text-label-md font-label-md font-semibold hover:bg-primary/90 flex items-center gap-1.5 shadow-sm" onclick="saveNarrativeDescription()">
+<span class="material-symbols-outlined text-base">save</span>
+          Terapkan ke Rapor Siswa
+        </button>
+</div>
+</div>
+</div>
+<!-- ================= MODAL: PRATINJAU & CETAK RAPOR STANDAR A4 ================= -->
+<div class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-2 sm:p-6 overflow-y-auto" id="printModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-4xl w-full border border-outline-variant shadow-2xl flex flex-col max-h-[90vh]">
+<!-- Modal Top Toolbar -->
+<div class="p-4 border-b border-outline-variant flex items-center justify-between bg-surface-container-low sticky top-0 z-10">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">print</span>
+<h3 class="text-title-md font-title-md font-bold text-on-surface">Pratinjau Lembar Rapor Hasil Belajar (Format Resmi A4)</h3>
+</div>
+<div class="flex items-center gap-2">
+<button class="px-3 py-1.5 rounded-lg bg-primary text-on-primary text-label-md font-label-md flex items-center gap-1.5 shadow-sm hover:bg-primary/90" onclick="window.print()">
+<span class="material-symbols-outlined text-base">print</span>
+            Cetak ke PDF / Printer
+          </button>
+<button class="p-1 rounded-lg text-secondary hover:text-on-surface hover:bg-surface-container" onclick="closePrintModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<!-- Scrollable Printable Paper Sheet (210mm styling) -->
+<div class="overflow-y-auto p-4 sm:p-8 bg-slate-100 flex justify-center">
+<div class="bg-white w-full max-w-[760px] p-8 shadow border border-slate-300 text-slate-900 text-[12px] leading-relaxed font-sans">
+<!-- Kop Surat Sekolah Resmi Kemendikbudristek -->
+<div class="border-b-2 border-slate-900 pb-3 mb-4 text-center relative">
+<div class="font-bold text-[14px] uppercase tracking-wide">Pemerintah Provinsi Daerah Khusus Ibukota Jakarta</div>
+<div class="font-bold text-[13px] uppercase">Dinas Pendidikan • SMK Negeri 1 Jakarta</div>
+<div class="text-[11px] text-slate-600">Jl. Budi Utomo No. 7, Pasar Baru, Sawah Besar, Jakarta Pusat • Telp: (021) 3813630</div>
+<div class="text-[11px] text-slate-600">NPSN: 20101452 • Website: smkn1jakarta.sch.id</div>
+</div>
+<div class="text-center font-bold text-[13px] mb-4 tracking-wider uppercase underline">
+            Laporan Hasil Belajar (Rapor Peserta Didik)
+          </div>
+<!-- Identitas Siswa -->
+<div class="grid grid-cols-2 gap-y-1 mb-4 text-[11px]">
+<div>Nama Peserta Didik : <strong id="printStudentName">Ahmad Fadhil</strong></div>
+<div>Kelas / Fase : <strong>X-A / Fase E</strong></div>
+<div>NISN / NIS : <strong id="printStudentNISN">0081294821</strong> / 24250101</div>
+<div>Semester / T.A : <strong>2 (Genap) / 2024-2025</strong></div>
+<div>Nama Sekolah : <strong>SMK Negeri 1 Jakarta</strong></div>
+<div>Program Keahlian : <strong>Teknik Komputer &amp; Jaringan</strong></div>
+</div>
+<!-- Tabel Capaian Kompetensi -->
+<table class="w-full border-collapse border border-slate-800 text-[11px] mb-4">
+<thead>
+<tr class="bg-slate-100 text-center font-bold">
+<th class="border border-slate-800 p-1.5 w-8">No</th>
+<th class="border border-slate-800 p-1.5 w-44">Mata Pelajaran</th>
+<th class="border border-slate-800 p-1.5 w-16">Nilai Akhir</th>
+<th class="border border-slate-800 p-1.5">Capaian Kompetensi &amp; Deskripsi Kemajuan Belajar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="border border-slate-800 p-2 text-center align-top">1</td>
+<td class="border border-slate-800 p-2 font-semibold align-top">Informatika</td>
+<td class="border border-slate-800 p-2 text-center font-bold align-top" id="printFinalScore">79</td>
+<td class="border border-slate-800 p-2 align-top text-justify leading-snug" id="printNarrative">
+                  Menunjukkan penguasaan yang sangat baik dalam menganalisis topologi jaringan komputer dan troubleshooting dasar, namun masih memerlukan bimbingan intensif dalam menerapkan konsep algoritma struktur data graf dan tree.
+                </td>
+</tr>
+<tr>
+<td class="border border-slate-800 p-2 text-center align-top">2</td>
+<td class="border border-slate-800 p-2 font-semibold align-top">Dasar Kejuruan TKJ</td>
+<td class="border border-slate-800 p-2 text-center font-bold align-top">84</td>
+<td class="border border-slate-800 p-2 align-top text-justify leading-snug">
+                  Sangat terampil dalam perakitan piranti komputasi dan instalasi OS jaringan. Cakap dalam pengujian kabel UTP Cat6.
+                </td>
+</tr>
+<tr>
+<td class="border border-slate-800 p-2 text-center align-top">3</td>
+<td class="border border-slate-800 p-2 font-semibold align-top">Matematika</td>
+<td class="border border-slate-800 p-2 text-center font-bold align-top">80</td>
+<td class="border border-slate-800 p-2 align-top text-justify leading-snug">
+                  Cakap dalam menyelesaikan permasalahan barisan geometri serta pemodelan fungsi eksponensial.
+                </td>
+</tr>
+</tbody>
+</table>
+<!-- Ekstrakurikuler & Presensi -->
+<div class="grid grid-cols-2 gap-4 mb-6 text-[11px]">
+<!-- Presensi -->
+<table class="border-collapse border border-slate-800 w-full">
+<thead>
+<tr class="bg-slate-100"><th class="border border-slate-800 p-1 text-center font-bold" colspan="2">Ketidakhadiran</th></tr>
+</thead>
+<tbody>
+<tr><td class="border border-slate-800 p-1">Sakit</td><td class="border border-slate-800 p-1 text-center font-medium">1 Hari</td></tr>
+<tr><td class="border border-slate-800 p-1">Izin</td><td class="border border-slate-800 p-1 text-center font-medium">0 Hari</td></tr>
+<tr><td class="border border-slate-800 p-1">Tanpa Keterangan</td><td class="border border-slate-800 p-1 text-center font-medium">0 Hari</td></tr>
+</tbody>
+</table>
+<!-- Keputusan Kenaikan -->
+<div class="border border-slate-800 p-2.5 rounded bg-slate-50 flex flex-col justify-center">
+<div class="font-bold text-[11px] mb-1">Keputusan Rapat Dewan Guru:</div>
+<div class="text-[12px] font-bold text-slate-900 bg-white p-1.5 border border-slate-300 text-center">
+                NAIK KE KELAS XI (SEBELAS)
+              </div>
+</div>
+</div>
+<!-- Catatan Wali Kelas -->
+<div class="border border-slate-800 p-2.5 mb-8 text-[11px]">
+<strong>Catatan Wali Kelas:</strong> Pertahankan kedisiplinan dan semangat belajar di bidang rekayasa teknologi informasi. Asah kemampuan berpikir komputasional secara konsisten.
+          </div>
+<!-- Triple Signature Block (Standar Kemendikbudristek) -->
+<div class="grid grid-cols-3 text-center text-[10px] gap-2 pt-2">
+<div>
+<p>Mengetahui,<br/>Orang Tua / Wali Murid</p>
+<div class="h-14"></div>
+<p class="font-bold underline">( .................................................. )</p>
+</div>
+<div>
+<p>Jakarta, 21 Juni 2025<br/>Wali Kelas X-A</p>
+<div class="h-14"></div>
+<p class="font-bold underline">Budi Santoso, S.Kom., M.T.</p>
+<p class="text-[9px]">NIP. 19820514 200801 1 009</p>
+</div>
+<div>
+<p>Mengetahui,<br/>Kepala SMK Negeri 1 Jakarta</p>
+<div class="h-14"></div>
+<p class="font-bold underline">Dra. Hj. Nurhayati, M.Pd.</p>
+<p class="text-[9px]">NIP. 19680321 199303 2 004</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ================= MODAL: SUPABASE CONFIGURATION & SCHEMA VIEWER ================= -->
+<div class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-sm flex items-center justify-center p-4" id="supabaseModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-3xl w-full border border-outline-variant shadow-2xl overflow-hidden">
+<div class="p-4 bg-slate-900 text-white flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-emerald-400">database</span>
+<h3 class="text-title-md font-title-md font-bold">Supabase PostgreSQL Schema &amp; Client Architecture</h3>
+</div>
+<button class="text-slate-400 hover:text-white" onclick="toggleSupabaseModal()">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<div class="p-4 bg-slate-950 text-slate-200 font-data-mono text-[12px] overflow-x-auto max-h-[460px] space-y-4">
+<div>
+<span class="text-emerald-400 font-bold">// 1. Supabase Client Initializer (src/lib/supabase.js)</span>
+<pre class="mt-1 text-slate-300">import { createClient } from '@supabase/supabase-js';
+
+const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL || 'https://xyzschool.supabase.co';
+const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || 'public-anon-key-mock';
+
+export const supabase = createClient(supabaseUrl, supabaseKey);</pre>
+</div>
+<div>
+<span class="text-emerald-400 font-bold">-- 2. Kurikulum Merdeka 2025 Table DDL (PostgreSQL)</span>
+<pre class="mt-1 text-slate-300">CREATE TABLE penilaian_sumatif_tp (
+  id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+  siswa_id UUID REFERENCES siswa(id),
+  mata_pelajaran_id UUID REFERENCES mapel(id),
+  semester VARCHAR(10) DEFAULT 'GENAP_2024_2025',
+  tp_1_score NUMERIC(5,2),
+  tp_2_score NUMERIC(5,2),
+  tp_3_score NUMERIC(5,2),
+  tp_4_score NUMERIC(5,2),
+  tp_5_score NUMERIC(5,2),
+  nilai_akhir NUMERIC(5,2) GENERATED ALWAYS AS ((tp_1_score + tp_2_score + tp_3_score + tp_4_score + tp_5_score) / 5) STORED,
+  status_kktp VARCHAR(20),
+  deskripsi_rapor TEXT,
+  updated_at TIMESTAMPTZ DEFAULT NOW()
+);</pre>
+</div>
+</div>
+<div class="p-3 bg-surface-container-low border-t border-outline-variant flex items-center justify-between text-label-sm font-label-sm">
+<span class="text-secondary">Ready for production hookup via Row Level Security (RLS)</span>
+<button class="px-3 py-1.5 rounded bg-primary text-on-primary font-medium" onclick="toggleSupabaseModal()">Tutup</button>
+</div>
+</div>
+</div>
+<!-- ================= INLINE SCRIPT LOGIC ================= -->
+<script>
+    // Calculation Mode state: 'pure', 'weighted', 'kktp'
+    let currentCalcMode = 'pure';
+
+    function setCalculationMode(mode) {
+      currentCalcMode = mode;
+      
+      // Update UI buttons
+      const buttons = {
+        'pure': document.getElementById('calc-pure'),
+        'weighted': document.getElementById('calc-weighted'),
+        'kktp': document.getElementById('calc-kktp')
+      };
+
+      Object.keys(buttons).forEach(key => {
+        if (key === mode) {
+          buttons[key].className = 'px-3 py-1 rounded text-label-md font-label-md bg-white text-primary shadow-sm font-medium';
+        } else {
+          buttons[key].className = 'px-3 py-1 rounded text-label-md font-label-md text-secondary hover:text-on-surface font-medium';
+        }
+      });
+
+      recalculateAllRows();
+    }
+
+    function recalculateAllRows() {
+      const rows = document.querySelectorAll('#studentTableBody tr');
+      let totalSum = 0;
+      let count = 0;
+
+      rows.forEach(row => {
+        const inputs = row.querySelectorAll('.score-input');
+        const scores = Array.from(inputs).map(inp => parseFloat(inp.value) || 0);
+
+        let finalScore = 0;
+        if (currentCalcMode === 'pure' || currentCalcMode === 'weighted') {
+          // Equal 20% or pure mean
+          finalScore = scores.reduce((a, b) => a + b, 0) / (scores.length || 1);
+        } else {
+          // KKTP threshold ratio
+          const passed = scores.filter(s => s >= 70).length;
+          finalScore = (passed / scores.length) * 100;
+        }
+
+        const scoreCell = row.querySelector('.final-score');
+        const badgeCell = row.querySelector('.kktp-badge-cell');
+
+        scoreCell.textContent = finalScore.toFixed(1);
+        totalSum += finalScore;
+        count++;
+
+        // Update styling and KKTP chip
+        if (finalScore >= 85) {
+          badgeCell.innerHTML = `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#ECFDF5] text-[#047857] border border-[#A7F3D0]">Tuntas (Mahir)</span>`;
+          scoreCell.className = "p-3 text-center font-data-mono font-bold text-emerald-700 bg-surface-container/60 border-l border-outline-variant text-base final-score";
+        } else if (finalScore >= 70) {
+          badgeCell.innerHTML = `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFFBEB] text-[#B45309] border border-[#FDE68A]">Tuntas (Cakap)</span>`;
+          scoreCell.className = "p-3 text-center font-data-mono font-bold text-primary bg-surface-container/60 border-l border-outline-variant text-base final-score";
+        } else {
+          badgeCell.innerHTML = `<span class="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-semibold bg-[#FFF1F2] text-[#BE123C] border border-[#FECDD3]">Perlu Bimbingan</span>`;
+          scoreCell.className = "p-3 text-center font-data-mono font-bold text-error bg-surface-container/60 border-l border-outline-variant text-base final-score";
+        }
+      });
+
+      if (count > 0) {
+        document.getElementById('classAverage').textContent = (totalSum / count).toFixed(1);
+      }
+    }
+
+    function updateStudentScore(studentId) {
+      const row = document.querySelector(`tr[data-student-id="${studentId}"]`);
+      if (!row) return;
+
+      const inputs = row.querySelectorAll('.score-input');
+      inputs.forEach(input => {
+        const val = parseFloat(input.value) || 0;
+        if (val < 70) {
+          input.className = "score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-rose-50 text-rose-800";
+        } else if (val < 85) {
+          input.className = "score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-amber-50 text-amber-800";
+        } else {
+          input.className = "score-input w-16 text-center py-1 px-1.5 border border-outline-variant rounded font-data-mono font-medium bg-emerald-50 text-emerald-800";
+        }
+      });
+
+      recalculateAllRows();
+      flashSaveIndicator();
+    }
+
+    function flashSaveIndicator() {
+      const ind = document.getElementById('saveIndicator');
+      ind.innerHTML = `<span class="material-symbols-outlined text-sm animate-spin">sync</span><span>Menyimpan ke Supabase...</span>`;
+      setTimeout(() => {
+        ind.innerHTML = `<span class="material-symbols-outlined text-sm">check_circle</span><span>Tersimpan otomatis ke database</span>`;
+      }, 700);
+    }
+
+    function triggerRecalculation() {
+      recalculateAllRows();
+      flashSaveIndicator();
+    }
+
+    function triggerSyncNotification() {
+      flashSaveIndicator();
+      alert('Sinkronisasi data penilaian ke cluster Supabase berhasil! 36 catatan termutakhirkan.');
+    }
+
+    // Role Switcher Interaction
+    function switchRole(role) {
+      if (role === 'wali') {
+        document.getElementById('section-wali').scrollIntoView({ behavior: 'smooth' });
+      } else if (role === 'admin') {
+        alert('Mengalihkan ke Konsol Kurikulum & Administrasi Master Data Sekolah.');
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    }
+
+    // Generator Modal functions
+    const tpNames = [
+      "TP 1: Algoritma & Pemrograman",
+      "TP 2: Struktur Data Graf & Tree",
+      "TP 3: Jaringan Komputer & Internet",
+      "TP 4: Keamanan Data & Privasi",
+      "TP 5: Dampak Sosial Informatika"
+    ];
+
+    function openDescriptionGenerator(name, scores = [85, 62, 92, 78, 80]) {
+      document.getElementById('modalStudentName').textContent = name;
+      
+      let maxScore = -1;
+      let minScore = 999;
+      let maxIdx = 0;
+      let minIdx = 0;
+
+      scores.forEach((sc, idx) => {
+        if (sc > maxScore) { maxScore = sc; maxIdx = idx; }
+        if (sc < minScore) { minScore = sc; minIdx = idx; }
+      });
+
+      document.getElementById('modalHighestTP').textContent = `${tpNames[maxIdx]} (Skor: ${maxScore})`;
+      document.getElementById('modalLowestTP').textContent = `${tpNames[minIdx]} (Skor: ${minScore})`;
+
+      const narrative = `Menunjukkan penguasaan yang sangat memuaskan dalam materi ${tpNames[maxIdx].split(':')[1].trim()}, namun masih perlu pendampingan berkala dalam menguasai ${tpNames[minIdx].split(':')[1].trim()}.`;
+      document.getElementById('narrativeTextarea').value = narrative;
+      document.getElementById('wordCountIndicator').textContent = `${narrative.split(' ').length} kata`;
+
+      document.getElementById('narrativeModal').classList.remove('hidden');
+    }
+
+    function closeDescriptionModal() {
+      document.getElementById('narrativeModal').classList.add('hidden');
+    }
+
+    function regenerateVariation() {
+      const ta = document.getElementById('narrativeTextarea');
+      ta.value = "Sangat terampil dan mandiri saat menganalisis infrastruktur jaringan komputer serta konsep keamanan data, dengan evaluasi lanjutan direkomendasikan pada pemecahan kasus struktur data hierarkis.";
+      document.getElementById('wordCountIndicator').textContent = `${ta.value.split(' ').length} kata`;
+    }
+
+    function saveNarrativeDescription() {
+      closeDescriptionModal();
+      flashSaveIndicator();
+    }
+
+    // Print Modal functions
+    function openPrintModal() {
+      document.getElementById('printModal').classList.remove('hidden');
+    }
+
+    function openPrintModalForStudent(name, nisn, score) {
+      document.getElementById('printStudentName').textContent = name;
+      document.getElementById('printStudentNISN').textContent = nisn;
+      document.getElementById('printFinalScore').textContent = Math.round(score);
+      openPrintModal();
+    }
+
+    function closePrintModal() {
+      document.getElementById('printModal').classList.add('hidden');
+    }
+
+    function toggleSupabaseModal() {
+      const modal = document.getElementById('supabaseModal');
+      modal.classList.toggle('hidden');
+    }
+
+    function setActiveNav(el, target) {
+      document.querySelectorAll('.nav-item').forEach(item => {
+        item.className = 'nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg text-secondary hover:bg-surface-container-low font-body-md text-body-md';
+      });
+      el.className = 'nav-item flex items-center gap-3 px-3 py-2.5 rounded-lg bg-secondary-container text-on-secondary-fixed font-title-md text-title-md';
+    }
+  </script>
+</body></html>
